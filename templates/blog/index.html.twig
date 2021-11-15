@@ -14,4 +14,8 @@
             {% include './includes/sidebar.html.twig' %}
         </aside>
     </div>
+    {# the image lives at "public/images/logo.png" #}
+    <img src="{{ asset('img/chad.png') }}" alt="Symfony!"/>
+    <link href="{{ asset('css/blog.css') }}" rel="stylesheet"/>
+    <script src="{{ asset('bundles/acme/js/loader.js') }}"></script>
 {% endblock %}
