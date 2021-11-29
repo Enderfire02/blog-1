@@ -16,8 +16,10 @@
             </p>
         {% endif %}
     </div>
-
-
+    {{ dump(tamre) }}
+    {% for contact in tamre %}
+        {{ contact.name }}
+    {% endfor %}
 
     {# the CSS file lives at "public/css/blog.css" #}
     <link href="{{ asset('css/contact.scss') }}" rel="stylesheet"/>
